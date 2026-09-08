@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Sends every route to index.html so client-side navigation doesn't 404 on refresh
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
